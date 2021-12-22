@@ -1,0 +1,91 @@
+body {
+  background-color: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paper {
+  width: 480px;
+  height: 700px;
+  background: linear-gradient(270deg, #f3f3f3, #f1f1f1);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  box-shadow: 10px 5px 5px #e7e7e4;
+}
+
+.clipimg {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  left: 200px;
+  top: 60px;
+}
+
+.font_zone {
+  position: relative;
+  left: 36px;
+  bottom: 50px;
+}
+
+.font_title {
+  display: flex;
+  width: 410px;
+  height: 140px;
+  justify-content: space-between;
+  border-bottom: 2px solid;
+  margin-bottom: 15px;
+}
+.font_title h1 {
+  font-size: 70px;
+}
+.font_title h2 {
+  font-size: 35px;
+  position: relative;
+  top: 55px;
+}
+
+.font_info {
+  width: 400px;
+  display: flex;
+  font-size: 0.01px;
+  justify-content: space-between;
+}
+
+.font_words {
+  width: 200px;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.surcles {
+  display: grid;
+  grid-template-rows: repeat(3, 130px);
+  grid-template-columns: repeat(3, 130px);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.surcle:nth-child(-n + 3) {
+  background-color: #bbe1f0;
+}
+
+.surcle:nth-child(n + 4):nth-child(-n + 6) {
+  background-color: #616365;
+}
+
+.surcle:nth-child(n + 7):nth-child(-n + 9) {
+  background-color: #04a565;
+}
+
+.surcle {
+  width: 130px;
+  height: 130px;
+  border-radius: 65px;
+  background-color: brown;
+}
